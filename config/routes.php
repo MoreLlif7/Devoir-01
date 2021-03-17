@@ -1,7 +1,8 @@
 <?php
 
 function getPage($db){    
-    $lesPages['accueil'] = "accueilControleur";     
+    $lesPages['accueil'] = "accueilControleur"; 
+    $lesPages['rendu'] = "RenduControleur";    
     
     if (isset($_GET['page'])){        
         $page = $_GET['page'];    
