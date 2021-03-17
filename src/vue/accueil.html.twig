@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+{% block title %} {{ parent() }} Accueil {% endblock %}
+
+{% block contenu %} 
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/MoreLlif7/Devoir-01.git">Liens vers GitHub</a>
+      </li>
+      <li class="nav-item">
+        <h1><small class=text-muted><u>Raymond Mehdi SIO1B Groupe 2</u></small></h1>
+      </li>
+    </ul>
+  </div>
+</nav> 
+
+<div class="container-fluid">
+<form action="index.php?page=accueil"method="post" enctype="application/x-www-form-urlencoded">
+  <label for="btText">Titre :</label>
+  <input type="text" class="form-control" id="btText" name="btText">
+  <label for="btArticle"> Article :</label>
+  <textarea class="form-control" id="btArticle" name="btArticle">
+  
+  </textarea>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" name="btInscrire">Envoyer</button>
+  </form>
+</div>
+{% endblock %}
